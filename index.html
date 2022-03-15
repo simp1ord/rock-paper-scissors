@@ -17,11 +17,13 @@
     
     <div class = game>
         <div class = "images">
-
+            <img id = "playerPlaceholder" src="images/2-24050_question-mark-png-image-transparent-white-question-mark-removebg-preview.png">
+            <img id = "computerPlaceholder" src="images/2-24050_question-mark-png-image-transparent-white-question-mark-removebg-preview.png">
         </div>
         
         <div class = "scores">
-
+            <div id="playerScoreDisplayed"></div>
+            <div id="computerScoreDisplayed"></div>
         </div>
 
         <div class="buttons">
@@ -43,7 +45,22 @@
     <div class = "content">
         <h4>Copyright @ Simp1ord 2022</h4>
     </div>
+    <div class = "endgameModal" id = "player">
+        <div class = "modalContent">
+            <h1>You Won!</h1>
+            <p>We have a winner, YOU beat the COMPUTER! Let's reset this game!</p>
+            <button class = "resetButton" onclick="refreshPage()">Reset The Game!</button>
+        </div>
+    </div>
+    <div class = "endgameModal" id = "computer">
+        <div class = "modalContent">
+            <h1>You Lost!</h1>
+            <p>Sorry, dude, you lost to the COMPUTER! Let's reset this game!</p>
+            <button class = "resetButton" onclick="refreshPage()">Reset The Game!</button>
+        </div>
+    </div> 
     
-<script src = "js/javascript.js"></script>    
+    <script src = "js/javascript.js"></script>   
 </body>
+
 </html>
